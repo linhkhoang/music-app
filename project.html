@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music List</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <img src="./asset/Icon/bye_bye_my_blue.jpg" alt="" id="background">
+    <audio src="./asset/Music/Bye Bye My Blue - Yerin Baek.mp3" id="song"></audio>
+
+    <div class="container">
+        <div class="box"></div>
+
+        <img id="thumbnail" src="./asset/Icon/bye_bye_my_blue.jpg" alt="">
+        <img id="play-pause" onclick = "playPause()" src="./asset/Cover/icons8-circled-play-64.png" alt="">
+        <img id="forward" onclick = "forward()" src="./asset/Cover/icons8-fast-forward-64.png" alt="">
+        <img id="backward" src="./asset/Cover/icons8-rewind-64.png" alt="">
+
+        <div class="artist">Yerin Baek</div>
+        <div class="song-title">Bye Bye My Blue</div>
+
+        <input type="range" min="0" max="" value="0" id="progress-bar" onchange="changeProgressBar()">
+        <div class="currentTime"></div>
+        <div class="durationTime"></div>
+    </div>
+    <script src="project.js"></script>
+</body>
+</html>
